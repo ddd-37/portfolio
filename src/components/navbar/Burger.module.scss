@@ -55,14 +55,14 @@
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.burger.is-active .inner {
+.burger-is-active .inner {
   background-color: transparent !important;
   transform: rotateY(180deg);
 }
-.burger.is-active .inner::before {
+.burger-is-active .inner::before {
   transform: translate3d(10px, 0, 0) rotate(45deg);
 }
-.burger.is-active .inner::after {
+.burger-is-active .inner::after {
   width: 30px;
   transform: translate3d(10px, -8px, 0) rotate(-45deg);
 }
