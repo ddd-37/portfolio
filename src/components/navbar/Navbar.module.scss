@@ -14,9 +14,11 @@
   padding-top: 5rem;
   flex-direction: column;
   text-align: center;
-  transition: 0.2s;
+  @include under-medium-breakpoint {
+    transition: 0.2s;
+  }
 
-  @include medium-breakpoint {
+  @include over-medium-breakpoint {
     left: 0;
     display: flex;
     flex-direction: row;
@@ -29,8 +31,10 @@
 }
 
 .nav-menu-open {
-  background-color: purple;
-  left: 0;
-  width: 100vw;
-  position: absolute;
+  @include under-medium-breakpoint {
+    background-color: purple;
+    left: 0;
+    width: 100vw;
+    position: absolute;
+  }
 }

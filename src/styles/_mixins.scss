@@ -1,5 +1,11 @@
-@mixin medium-breakpoint {
+@mixin over-medium-breakpoint {
   @media screen and (min-width: $md-breakpoint) {
+    @content;
+  }
+}
+
+@mixin under-medium-breakpoint {
+  @media screen and (max-width: $md-breakpoint) {
     @content;
   }
 }

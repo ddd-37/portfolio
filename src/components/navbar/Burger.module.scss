@@ -4,6 +4,10 @@
 .burger-is-active {
   position: fixed;
   z-index: 3;
+
+  @include over-medium-breakpoint {
+    display: none;
+  }
 }
 
 .burger svg {
@@ -69,7 +73,7 @@
   transform: translate3d(10px, -8px, 0) rotate(-45deg);
 }
 
-@include medium-breakpoint {
+@include over-medium-breakpoint {
   .burger {
     display: none;
   }

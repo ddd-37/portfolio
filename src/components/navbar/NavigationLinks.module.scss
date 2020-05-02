@@ -5,10 +5,13 @@
   margin: 0;
   padding: 0;
 
-  @include medium-breakpoint {
+  @include over-medium-breakpoint {
     display: flex;
     justify-content: flex-end;
-
     padding: 0 1rem;
   }
+}
+
+.nav-list li {
+  margin: 1rem;
 }
