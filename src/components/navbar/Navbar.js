@@ -3,23 +3,30 @@ import React, { useState } from "react"
 import Logo from "./Logo"
 import NavigationLinks from "./NavigationLinks"
 
-import navigationStyles from "./Navbar.module.scss"
+import navbarStyles from "./Navbar.module.scss"
 import Burger from "./Burger"
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
+  const menuOpen = navbarOpen ? navbarStyles.navMenuOpen : ""
+
   return (
-    <div className={navigationStyles.navContainer}>
+    <div className={navbarStyles.container}>
       <Burger
         open={navbarOpen}
         clicked={() => {
           setNavbarOpen(!navbarOpen)
         }}
       />
-      <Logo />
 
-      <NavigationLinks />
+      <div
+        className={`${navbarStyles.navMenu}
+          ${menuOpen}`}
+      >
+        <Logo />
+        <NavigationLinks />
+      </div>
     </div>
   )
 }

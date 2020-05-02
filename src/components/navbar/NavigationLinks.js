@@ -6,7 +6,6 @@ import navigationLinksStyles from "./NavigationLinks.module.scss"
 const NavigationLinks = () => {
   return (
     <ul className={navigationLinksStyles.navList}>
-      <li> </li>
       <li>
         <Link to="/">Home</Link>
       </li>

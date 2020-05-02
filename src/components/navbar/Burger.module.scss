@@ -1,6 +1,7 @@
 @import "./../../styles/styles.scss";
 
-.burger {
+.burger,
+.burger-is-active {
   position: fixed;
   z-index: 3;
 }
@@ -27,6 +28,7 @@
   transition-property: transform;
   transition-duration: 0.15s;
   transition-timing-function: ease;
+  z-index: 3;
 }
 
 .inner:before,
