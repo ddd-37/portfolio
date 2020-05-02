@@ -4,10 +4,9 @@ import hamburgerStyles from "./Burger.module.scss"
 
 const Burger = ({ open, clicked }) => {
   return (
-    <buttton
+    <button
       className={open ? hamburgerStyles.burgerIsActive : hamburgerStyles.burger}
       onClick={clicked}
-      role="button"
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
         <polygon
@@ -16,7 +15,7 @@ const Burger = ({ open, clicked }) => {
         ></polygon>
       </svg>
       <div className={hamburgerStyles.inner}></div>
-    </buttton>
+    </button>
   )
 }
 
