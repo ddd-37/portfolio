@@ -4,7 +4,11 @@ import { PropTypes } from "prop-types"
 import bannerStyles from "./Banner.module.scss"
 
 const Banner = ({ children }) => {
-  return <div className={bannerStyles.container}>{children}</div>
+  return (
+    <div className={bannerStyles.container}>
+      <div className={bannerStyles.content}>{children}</div>
+    </div>
+  )
 }
 
 Banner.propTypes = {

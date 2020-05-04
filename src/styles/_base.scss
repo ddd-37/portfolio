@@ -1,6 +1,10 @@
 //Colors
-$purple-gradient: linear-gradient(to right, #3c1053, #ad5389);
+$white: rgb(236, 236, 236);
 $darkPink: #ad5389;
+$purple: #3c1053;
+
+// Gradient for banner
+$purple-gradient: linear-gradient(to bottom right, #3c1053, #c002748a);
 
 // Breakpoints
 $md-breakpoint: 48em;
