@@ -1,0 +1,31 @@
+.jobCard {
+  background: white;
+  color: $greyBlue;
+  border-radius: 5px;
+  margin-bottom: $m-size;
+  padding: $m-size;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.jobCard h3 {
+  margin: 0;
+  font-size: 1.85rem;
+  font-weight: 400;
+}
+
+.jobCard h4 {
+  margin: $s-size 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.jobCard span {
+  font-size: 1rem;
+  margin: 0 0.5rem 0 0.1rem;
+}
+
+.jobCard li {
+  font-size: 1rem;
+  margin: $s-size 0 $s-size $l-size;
+  list-style-type: disc;
+}

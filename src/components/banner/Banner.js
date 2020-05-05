@@ -3,9 +3,9 @@ import { PropTypes } from "prop-types"
 
 import bannerStyles from "./Banner.module.scss"
 
-const Banner = ({ children }) => {
+const Banner = ({ children, style }) => {
   return (
-    <div className={bannerStyles.container}>
+    <div className={bannerStyles.container} style={style}>
       <div className={bannerStyles.content}>{children}</div>
     </div>
   )
@@ -13,6 +13,7 @@ const Banner = ({ children }) => {
 
 Banner.propTypes = {
   children: PropTypes.any,
+  style: PropTypes.object,
 }
 
 export default Banner

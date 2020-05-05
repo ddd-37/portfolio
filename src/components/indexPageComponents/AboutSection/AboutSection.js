@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Button from "./../../UI/Button/Button"
+import Button from "../../UI/Button/Button"
 
 import Avatar from "../Avatar/Avatar"
 
-const BioSection = () => {
+const AboutSection = () => {
   return (
     <section className="section">
       <summary className="limit-width-30">
@@ -22,11 +22,11 @@ const BioSection = () => {
           latest technologies
         </p>
         <Link to="/about">
-          <Button type="primary" style="primary" text="Learn more" />
+          <Button type="primary" text="Learn more" />
         </Link>
       </summary>
     </section>
   )
 }
 
-export default BioSection
+export default AboutSection

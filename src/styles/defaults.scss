@@ -11,6 +11,10 @@ button:focus {
 .section {
   display: flex;
   justify-content: center;
+  @include under-medium-breakpoint {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .limit-width-30 {
