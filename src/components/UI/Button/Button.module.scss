@@ -1,0 +1,52 @@
+@import "./../../../styles/styles.scss";
+
+.button {
+  position: relative;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: $white;
+  border-radius: 3px;
+  transition: 0.1s;
+}
+
+.button:hover {
+  top: -1px;
+  opacity: 0.9;
+}
+
+.button:active {
+  top: 1px;
+  opacity: 1;
+}
+
+.primary {
+  background: $plum;
+  border-bottom: 2px solid $darkPink;
+}
+
+.animated {
+  background: $plum;
+}
+
+.animated:before {
+  content: "";
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: 2px solid $purple;
+  border-left: 2px solid $purple;
+}
+
+.animated:after {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  right: -0.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid $purple;
+  border-bottom: 2px solid $purple;
+}

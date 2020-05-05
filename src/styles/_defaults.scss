@@ -7,3 +7,16 @@ button {
 button:focus {
   outline: transparent;
 }
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.limit-width-30 {
+  max-width: 30rem;
+}
+
+.center {
+  text-align: center;
+}
