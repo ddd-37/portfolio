@@ -3,6 +3,7 @@ import { PropTypes } from "prop-types"
 
 import "normalize.css"
 import layoutStyles from "./Layout.module.scss"
+import "./../../styles/defaults.scss"
 import Navbar from "../navbar/Navbar"
 
 const Layout = ({ children }) => {

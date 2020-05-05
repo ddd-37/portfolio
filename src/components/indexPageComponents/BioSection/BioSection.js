@@ -3,15 +3,14 @@ import { Link } from "gatsby"
 
 import Button from "./../../UI/Button/Button"
 
-import biosectionStyles from "./BioSection.module.scss"
 import Avatar from "../Avatar/Avatar"
 
 const BioSection = () => {
   return (
-    <section className={biosectionStyles.section}>
-      <summary className={biosectionStyles.limitWidth30}>
+    <section className="section">
+      <summary className="limit-width-30">
         <Avatar />
-        <h2 className={biosectionStyles.center}>About</h2>
+        <h2 className="center">About</h2>
         <p>
           Welcome! I'm a front end developer and coding instructor from Denver,
           Colorado. I am passionate about learning new things, collaboration,
