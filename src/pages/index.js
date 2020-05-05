@@ -10,7 +10,7 @@ export default () => (
   <Layout>
     <Banner>
       <h1>
-        Hello there! I'm <strong>Devon Deason</strong>.
+        <strong>Devon Deason</strong>
       </h1>
       <h1>A react developer and coding instructor</h1>
     </Banner>
