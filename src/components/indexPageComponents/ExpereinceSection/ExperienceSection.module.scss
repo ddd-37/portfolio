@@ -38,18 +38,3 @@
   flex: 1 1 auto;
   min-width: 20rem;
 }
-
-.skills-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  @include over-medium-breakpoint {
-    max-height: 50%;
-  }
-}
-
-.skills p {
-  font-size: 2rem;
-  margin: $m-size;
-}

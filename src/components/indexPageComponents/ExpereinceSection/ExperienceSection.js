@@ -3,6 +3,9 @@ import React from "react"
 import JobCard from "./JobCard/JobCard"
 
 import experienceSectionStyles from "./ExperienceSection.module.scss"
+import Image from "./../../UI/Image/Image"
+
+const widthForIcons = 100
 
 const ExperienceSection = () => {
   return (
@@ -81,8 +84,14 @@ const ExperienceSection = () => {
       </div>
       <div className={experienceSectionStyles.skills}>
         <h1>SKILLS</h1>
+
         <div className={experienceSectionStyles.skillsList}>
-          <p>Javascript</p>
+          <Image
+            filename="js"
+            alt="JavaScript Icon"
+            title="JavaScript"
+            maxWidth={widthForIcons}
+          />
           <p>React</p>
           <p>Gatsby</p>
           <p>CSS/SASS</p>
