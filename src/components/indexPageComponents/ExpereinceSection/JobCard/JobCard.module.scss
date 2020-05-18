@@ -3,7 +3,7 @@
   color: $greyBlue;
   border-radius: 5px;
   margin-bottom: $m-size;
-  padding: $m-size;
+  padding: $l-size;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -19,13 +19,22 @@
   font-weight: 400;
 }
 
+.jobCard div {
+  padding-left: $m-size;
+}
+
 .jobCard span {
   font-size: 1rem;
   margin: 0 0.5rem 0 0.1rem;
 }
 
+.jobCard ul {
+  padding-left: $l-size;
+}
+
 .jobCard li {
   font-size: 1rem;
-  margin: $s-size 0 $s-size $l-size;
-  list-style-type: disc;
+  margin: $m-size 0;
+  padding-left: $s-size;
+  list-style-type: "-";
 }

@@ -17,11 +17,18 @@ const ExperienceSection = () => {
         >
           <ul>
             <li>
-              Teaches a range of programming topics for kids from k-8th grade
+              Runs class for MinceCraft server modification to teach children
+              more advanced programming conecpts in java
             </li>
             <li>
-              Responsible for using curriculum resources to provide a quality
-              expereince fro all students
+              Teaches children grades K-8 basic programming concepts through
+              Scratch Game Developemnt and Robotics (Ozobots)
+            </li>
+
+            <li>
+              Preparing and presenting coursework and activites for students
+              using CodeKingdoms for Minecraft server modifications, and Scratch
+              for Game Development and Robotics
             </li>
             <li>
               Acts as liason between schools and parents for Coding with Kids
@@ -29,7 +36,7 @@ const ExperienceSection = () => {
           </ul>
         </JobCard>
         <JobCard
-          jobTitle="Junior front end web designer/developer"
+          jobTitle="Junior Front End Web Designer/Developer"
           company="NCH Software"
           duration="Dec 2017-Dec 2019"
           location="Denver, CO"
@@ -40,15 +47,17 @@ const ExperienceSection = () => {
               end person for each
             </li>
             <li>
-              Translated UI from Photopad for desktop to online and mobile
-              friendly version
+              Revamped UI and app interface for PhotoPad Online, taking it from
+              an unfinished and unresponsive UI to a fully responsive and
+              functional online photo editor
             </li>
             <li>
               Responsible for UI/UX overhaul of Brisk Invoice to add mobile
               responsiveness to application
             </li>
             <li>
-              Acts as liason between schools and parents for Coding with Kids
+              Works closely with marketing team to help develop and implement
+              A/B testing for product landing pages
             </li>
           </ul>
         </JobCard>
@@ -72,13 +81,17 @@ const ExperienceSection = () => {
       </div>
       <div className={experienceSectionStyles.skills}>
         <h1>SKILLS</h1>
-        <p>javascript</p>
-        <p>React</p>
-        <p>CSS</p>
-        <p>HTML</p>
-        <p>GitHub</p>
-        <p>SVN</p>
-        <p>Firebase</p>
+        <div className={experienceSectionStyles.skillsList}>
+          <p>Javascript</p>
+          <p>React</p>
+          <p>Gatsby</p>
+          <p>CSS/SASS</p>
+          <p>HTML</p>
+          <p>Gatsby</p>
+          <p>GitHub</p>
+          <p>SVN</p>
+          <p>Firebase</p>
+        </div>
       </div>
     </section>
   )

@@ -1,7 +1,6 @@
 .container {
   display: flex;
-  flex-wrap: wrap;
-  min-width: 15rem;
+  flex-direction: row;
   background: linear-gradient(to bottom left, $purple, rgba($darkPink, 0.7)),
     url("./../../../images/bg-pattern.png");
 
@@ -9,7 +8,7 @@
 
   @include over-medium-breakpoint {
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-    padding: 10rem 2rem;
+    padding: 10rem;
   }
 }
 
@@ -36,9 +35,21 @@
 }
 
 .skills {
+  flex: 1 1 auto;
   min-width: 20rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @include over-medium-breakpoint {
+    max-height: 50%;
+  }
 }
 
 .skills p {
   font-size: 2rem;
+  margin: $m-size;
 }
