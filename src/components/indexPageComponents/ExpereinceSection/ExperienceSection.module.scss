@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: linear-gradient(to bottom left, $purple, rgba($darkPink, 0.7)),
     url("./../../../images/bg-pattern.png");
 
@@ -9,6 +9,7 @@
   @include over-medium-breakpoint {
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
     padding: 10rem;
+    flex-direction: row;
   }
 }
 
@@ -35,6 +36,12 @@
 }
 
 .skills {
-  flex: 1 1 auto;
   min-width: 20rem;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 10px;
+  row-gap: 1em;
 }

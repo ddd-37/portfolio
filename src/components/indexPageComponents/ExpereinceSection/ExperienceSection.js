@@ -92,14 +92,56 @@ const ExperienceSection = () => {
             title="JavaScript"
             maxWidth={widthForIcons}
           />
-          <p>React</p>
-          <p>Gatsby</p>
-          <p>CSS/SASS</p>
-          <p>HTML</p>
-          <p>Gatsby</p>
-          <p>GitHub</p>
-          <p>SVN</p>
-          <p>Firebase</p>
+          <Image
+            filename="react"
+            alt="React Icon"
+            title="React"
+            maxWidth={widthForIcons}
+          />
+          <Image
+            filename="gatsby"
+            alt="Gatsby Icon"
+            title="Gatsby"
+            maxWidth={widthForIcons}
+          />
+          <Image
+            filename="sass"
+            alt="Sass Icon"
+            title="Sass"
+            maxWidth={widthForIcons}
+          />
+          <Image
+            filename="html"
+            alt="HTML/CSS Icon"
+            title="HTML/CSS"
+            maxWidth={widthForIcons}
+          />
+
+          <Image
+            filename="firebase"
+            alt="Firebase Icon"
+            title="Firebase"
+            maxWidth={widthForIcons}
+          />
+
+          <Image
+            filename="semantic"
+            alt="Semantic UI React Icon"
+            title="Semantic UI React"
+            maxWidth={widthForIcons}
+          />
+          <Image
+            filename="bootstrap"
+            alt="Bootstrap Icon"
+            title="Bootstrap"
+            maxWidth={widthForIcons}
+          />
+          <Image
+            filename="github"
+            alt="Github Icon"
+            title="Github"
+            maxWidth={widthForIcons}
+          />
         </div>
       </div>
     </section>
