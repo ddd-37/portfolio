@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  @include over-medium-breakpoint {
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+  }
+}
+
+.reverse-row {
+  @include over-medium-breakpoint {
+    flex-direction: row-reverse;
+  }
+}
+
+.container h3 {
+  margin: 0;
+}
+
+.image {
+  flex-grow: 1;
+  margin: 0 1rem;
+}
+.content {
+  flex: 0 1 50%;
+  margin: 0 1rem;
+}

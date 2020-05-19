@@ -10,7 +10,7 @@ const Button = ({ text, type, onClick }) => {
       className={classNames(buttonStyles.button, buttonStyles[type])}
       onClick={onClick}
     >
-      {text}
+      <span>{text}</span>
     </button>
   )
 }
