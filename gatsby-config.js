@@ -10,6 +10,18 @@ module.exports = {
   /* Your site config here */
   plugins: [
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: "src/images/avatar.png",
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-sass",
       options: {
         data: `@import "./src/sass/styles";`,
@@ -25,5 +37,6 @@ module.exports = {
     },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    `gatsby-plugin-react-helmet`,
   ],
 }

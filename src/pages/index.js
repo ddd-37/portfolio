@@ -5,9 +5,13 @@ import Banner from "./../components/banner/Banner"
 
 import AboutSection from "./../components/indexPageComponents/AboutSection/AboutSection"
 import ExperienceSection from "../components/indexPageComponents/ExpereinceSection/ExperienceSection"
+import { Helmet } from "react-helmet"
 
 export default () => (
   <Layout>
+    <Helmet>
+      <title>{process.env.GATSBY_TITLE}</title>
+    </Helmet>
     <Banner>
       <h1>
         <strong>Devon Deason</strong>
