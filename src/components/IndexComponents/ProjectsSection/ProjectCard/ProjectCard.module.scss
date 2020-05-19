@@ -4,7 +4,7 @@
   margin-bottom: 3rem;
   @include over-medium-breakpoint {
     flex-direction: row;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     margin-bottom: 6rem;
   }
@@ -22,9 +22,19 @@
 
 .image {
   flex-grow: 1;
-  margin: 0 1rem;
 }
+
 .content {
   flex: 0 1 50%;
-  margin: 0 1rem;
+  line-height: 1.5rem;
+  @include under-medium-breakpoint {
+    margin-top: 1rem;
+  }
+}
+
+@include over-medium-breakpoint {
+  .image,
+  .content {
+    margin: 0 1rem;
+  }
 }

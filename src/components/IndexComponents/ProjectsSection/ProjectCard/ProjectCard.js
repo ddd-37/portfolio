@@ -1,4 +1,5 @@
 import React from "react"
+import { PropTypes } from "prop-types"
 import classNames from "classnames"
 
 import projectCardStyles from "./ProjectCard.module.scss"
@@ -6,7 +7,7 @@ import projectCardStyles from "./ProjectCard.module.scss"
 import Button from "../../../UI/Button/Button"
 import Image from "../../../UI/Image/Image"
 
-const ProjectCard = ({ textLeft }) => {
+const ProjectCard = ({ imgSrc, title, children, textLeft }) => {
   return (
     <div
       className={classNames(projectCardStyles.container, {
@@ -14,26 +15,21 @@ const ProjectCard = ({ textLeft }) => {
       })}
     >
       <div className={projectCardStyles.image}>
-        <Image filename="demo" maxWidth={500} />
+        <Image filename={imgSrc} title={title} alt={title} />
       </div>
       <div className={projectCardStyles.content}>
-        <h3>Project Name</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-          consectetur ipsam molestias libero inventore! Vero corporis,
-          laudantium, distinctio natus, sequi eaque qui maxime at adipisci
-          cupiditate obcaecati explicabo consequatur alias?
-        </p>
-        <Button type="primary" text="View App" />
-        <Button
-          type="secondary"
-          text="Github Repo"
-          iconSrc="github"
-          iconWidth={50}
-        />
+        <h3>{title}</h3>
+        {children}
       </div>
     </div>
   )
+}
+ProjectCard.propType = {
+  imgSrc: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired,
+
+  textLeft: PropTypes.bool,
 }
 
 export default ProjectCard

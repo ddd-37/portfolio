@@ -1,5 +1,9 @@
 .container {
-  padding: 0 5rem;
+  padding: 0 1rem;
+
+  @include over-medium-breakpoint {
+    padding: 0 5rem;
+  }
 }
 
 .container h1 {
