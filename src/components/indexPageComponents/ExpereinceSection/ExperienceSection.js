@@ -20,7 +20,7 @@ const ExperienceSection = () => {
         >
           <ul>
             <li>
-              Runs class for MinceCraft server modification to teach children
+              Runs class for MineCraft server modification to teach children
               more advanced programming conecpts in java
             </li>
             <li>
