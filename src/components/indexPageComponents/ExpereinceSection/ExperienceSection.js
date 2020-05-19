@@ -83,7 +83,7 @@ const ExperienceSection = () => {
         </JobCard>
       </div>
       <div className={experienceSectionStyles.skills}>
-        <h1>SKILLS</h1>
+        <h1>Skills</h1>
 
         <div className={experienceSectionStyles.skillsList}>
           <Image

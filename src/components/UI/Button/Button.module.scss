@@ -2,6 +2,7 @@
   position: relative;
   border: none;
   padding: 0.5rem 1rem;
+  margin-right: 1rem;
   cursor: pointer;
   color: $white;
   border-radius: 3px;
@@ -20,7 +21,10 @@
 
 .primary {
   background: $plum;
-  border-bottom: 2px solid $darkPink;
+}
+
+.secondary {
+  background: $purple;
 }
 
 .animated {

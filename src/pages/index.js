@@ -6,6 +6,7 @@ import Banner from "./../components/banner/Banner"
 import AboutSection from "./../components/indexPageComponents/AboutSection/AboutSection"
 import ExperienceSection from "../components/indexPageComponents/ExpereinceSection/ExperienceSection"
 import { Helmet } from "react-helmet"
+import ProjectsSection from "../components/IndexPageComponents/ProjectsSection/ProjectsSection"
 
 export default () => (
   <Layout>
@@ -20,5 +21,6 @@ export default () => (
     </Banner>
     <AboutSection />
     <ExperienceSection />
+    <ProjectsSection />
   </Layout>
 )
