@@ -4,7 +4,7 @@ import classNames from "classnames"
 import projectCardStyles from "./ProjectCard.module.scss"
 
 import Button from "../../../UI/Button/Button"
-import Image from "./../../../UI/Image/Image"
+import Image from "../../../UI/Image/Image"
 
 const ProjectCard = ({ textLeft }) => {
   return (
