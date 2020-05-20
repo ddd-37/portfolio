@@ -7,6 +7,7 @@ const Burger = ({ open, clicked }) => {
     <button
       className={open ? hamburgerStyles.burgerIsActive : hamburgerStyles.burger}
       onClick={clicked}
+      aria-label="Open nav button"
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
         <polygon
