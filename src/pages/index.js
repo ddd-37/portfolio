@@ -12,6 +12,7 @@ export default () => (
   <Layout>
     <Helmet>
       <title>{process.env.GATSBY_TITLE}</title>
+      <meta name="Devon Deason's developer portfolio built with Gatsby!" />
     </Helmet>
     <Banner>
       <h1>

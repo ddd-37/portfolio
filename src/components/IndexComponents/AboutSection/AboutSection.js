@@ -22,7 +22,7 @@ const AboutSection = () => {
           latest technologies
         </p>
         <Link to="/about">
-          <Button type="primary" text="Learn more" />
+          <Button type="primary" text="About" />
         </Link>
       </summary>
     </section>
